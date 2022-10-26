@@ -13,12 +13,20 @@ buscarMaiores()
 //Tarefa 4
 console.log("Tarefa 4 - Criar a função de adicionar um usuário\n")
 
-const adicionarUsuario = (id, nome, idade, sexo, email, telefone) => {
-    const user = { id, nome, idade, sexo, email, telefone };
+const adicionarUsuario = (user) => {
+    const { id, nome, idade, sexo, email, telefone } = user;
     usuarios.push(user);
-    return user;
+    return adicionarUsuario;
 };
-console.log(adicionarUsuario())
+adicionarUsuario({
+    id: 7,
+    nome: "Cristian",
+    idade: 19,
+    sexo: "masculino",
+    email: "exemplo@email.com",
+    telefone: "9999-9999"
+})
+console.log(usuarios)
 
 //Tarefa 5
 console.log("Tarefa 5 -  Criar a função de remover um usuário\n")
