@@ -14,7 +14,7 @@ buscarMaiores()
 console.log("Tarefa 3 - Criar a função de listar todos os usuários inserindo mais uma informação para cada de ativo: true\n")
 
 const adicionarStatus = () => {
-    usuarios.forEach((user) => usuarios.ativo = true)
+    usuarios.forEach((user) => user.ativo = true)
 }
 adicionarStatus()
 
